@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <org-chart :datasource="ds" @node-click="selectNode">
-      <!--       <template slot-scope="{ nodeData }">
-        <b @click="selectNode(nodeData)">{{ nodeData.name }}</b>
-      </template> -->
     </org-chart>
   </div>
 </template>
@@ -66,6 +63,22 @@ export default {
                     title: "UE engineer",
                     image:
                       "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
+                    children: [
+                      {
+                        id: "10",
+                        name: "Wei Wei",
+                        title: "engineer",
+                        image:
+                          "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
+                        children:[{
+                           id: "11",
+                        name: "Cheng Cheng",
+                        title: "engineer",
+                        image:
+                          "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
+                        }]
+                      },
+                    ],
                   },
                 ],
               },

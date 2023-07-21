@@ -15,7 +15,7 @@
             @click.stop="handleClick(datasource)"
           >
             <slot :node-data="datasource">
-             <img :src="datasource.image" alt="Avatar" class="avatar">
+             <img v-if="datasource.image" :src="datasource.image" alt="Avatar" class="avatar">
               <div class="title">
                 <i class="fa fa-users symbol"></i>
                 {{ datasource.name }}

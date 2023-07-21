@@ -165,14 +165,14 @@ export default {
 .orgchart-container {
   position: relative;
   display: inline-block;
-  height: 420px;
+  /* height: 420px; */
   width: calc(100% - 24px);
-  border: 2px dashed #aaa;
-  border-radius: 5px;
+  /* border: 2px dashed #aaa; */
+  /* border-radius: 5px; */
   overflow: auto;
   text-align: center;
 }
-.orgchart {
+/* .orgchart {
   box-sizing: border-box;
   display: inline-block;
   min-height: 202px;
@@ -192,7 +192,7 @@ export default {
   background-size: 10px 10px;
   border: 1px dashed rgba(0, 0, 0, 0);
   padding: 20px;
-}
+} */
 
 .orgchart .hidden,
 .orgchart ~ .hidden {

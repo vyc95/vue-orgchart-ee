@@ -1,23 +1,10 @@
-![OrgChart](http://dabeng.github.io/OrgChart/img/heading.svg)
-
-# [jQuery Version](https://github.com/dabeng/OrgChart)
-# [ES6 Version](http://github.com/dabeng/OrgChart.js)
-# [Web Components Version](http://github.com/dabeng/OrgChart-Webcomponents)
-# [Angular Version -- the most space-saving solution](https://github.com/dabeng/ng-orgchart)
-# [React Version](https://github.com/dabeng/react-orgchart)
-
-## Foreword
-- First of all, thanks a lot for [wesnolte](https://github.com/wesnolte)'s great work:blush: -- [jOrgChart](https://github.com/wesnolte/jOrgChart). The thought that using nested tables to build out the tree-like orgonization chart is amazing. This idea is more simple and direct than its counterparts based on svg
-- Unfortunately, it's long time not to see the update of jOrgChart. on the other hand, I got some interesting ideas to add, so I choose to create a new repo.
-
 ## Features
 - For now, just static organization chart
 
 # Installation
 ```
-npm install vue-organization-chart -S
+npm install vyc95/vue-orgchart-ee
 ```
-# [Demos](https://codesandbox.io/dashboard/sandboxes/Vue%20OrgChart)
 
 # Usage
 ```html
@@ -42,21 +29,60 @@ npm install vue-organization-chart -S
           'id': '1',
           'name': 'Lao Lao',
           'title': 'general manager',
+          'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
           'children': [
-            { 'id': '2', 'name': 'Bo Miao', 'title': 'department manager' },
-            { 'id': '3', 'name': 'Su Miao', 'title': 'department manager',
+            { 
+              'id': '2', 
+              'name': 'Bo Miao', 
+              'title': 'department manager',
+              'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
+            },
+            { 
+              'id': '3', 
+              'name': 'Su Miao', 
+              'title': 'department manager',
+              'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
               'children': [
-                { 'id': '4', 'name': 'Tie Hua', 'title': 'senior engineer' },
-                { 'id': '5', 'name': 'Hei Hei', 'title': 'senior engineer',
+                { 
+                  'id': '4',
+                  'name': 'Tie Hua',
+                  'title': 'senior engineer',
+                  'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg', 
+                },
+                { 
+                  'id': '5',
+                  'name': 'Hei Hei',
+                  'title': 'senior engineer',
+                  'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
                   'children': [
-                    { 'id': '6', 'name': 'Pang Pang', 'title': 'engineer' },
-                    { 'id': '7', 'name': 'Xiang Xiang', 'title': 'UE engineer' }
+                    { 
+                      'id': '6', 
+                      'name': 'Pang Pang', 
+                      'title': 'engineer',
+                      'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg', 
+                    },
+                    { 
+                      'id': '7', 
+                      'name': 'Xiang Xiang', 
+                      'title': 'UE engineer',
+                      'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg', 
+                    }
                   ]
                  }
                ]
              },
-            { 'id': '8', 'name': 'Hong Miao', 'title': 'department manager' },
-            { 'id': '9', 'name': 'Chun Miao', 'title': 'department manager' }
+            { 
+              'id': '8', 
+              'name': 'Hong Miao', 
+              'title': 'department manager',
+              'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg', 
+            },
+            { 
+              'id': '9', 
+              'name': 'Chun Miao', 
+              'title': 'department manager',
+              'image': 'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg', 
+            }
           ]
         }
       }
