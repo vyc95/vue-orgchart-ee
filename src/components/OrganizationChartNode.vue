@@ -16,11 +16,11 @@
           >
             <slot :node-data="datasource">
              <img v-if="datasource.image" :src="datasource.image" alt="Avatar" class="avatar">
-              <div class="title">
+              <div v-if="datasource.name" class="title">
                 <i class="fa fa-users symbol"></i>
                 {{ datasource.name }}
               </div>
-              <div class="content">{{ datasource.title }}</div>
+              <div v-if="datasource.title" class="content">{{ datasource.title }}</div>
             </slot>
           </div>
         </td>
